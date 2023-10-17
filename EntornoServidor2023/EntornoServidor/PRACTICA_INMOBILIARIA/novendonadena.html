@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inmobiliaria NOVENDONADENA</title>
+  </head>
+  <body>
+    <h1>Inserción de vivienda</h1>
+
+    <form action="validadorDatos.php" method="post">
+      <fieldset>
+        <legend>Introduzca los datos de su vivienda::</legend>
+
+        <p for="tipoVivienda">
+          <label for="tipoVivienda">Tipo de vivienda:</label>
+          <select name="tipoVivienda">
+            <option value="Piso">Piso</option>
+            <option value="Adosado">Adosado</option>
+            <option value="Chalet">Chalet</option>
+            <option value="Casa">Casa</option>
+          </select>
+        </p>
+        <p>
+          <label for="zona">Zona:</label>
+          <select name="zona">
+            <option value="Centro">Centro</option>
+            <option value="Nervión">Nervión</option>
+            <option value="Triana">Triana</option>
+            <option value="Aljarafe">Aljarafe</option>
+            <option value="Macarena">Macarena</option>
+          </select>
+        </p>
+      </fieldset>
+
+      <br />
+      <input type="submit" value="Insertar Vivienda" />
+    </form>
+  </body>
+</html>
