@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="en es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Ana María Herrera Sánchez"/>
+    <title>Inmobiliaria NOVENDONADENA</title>
+  </head>
+  
+  <body>
+    <h1>Inserción de vivienda</h1>
+    <form name="subida-imagenes" action="index.php" method="post" enctype="multipart/form-data">
+      <fieldset>
+        <legend>Introduzca los datos de su vivienda::</legend>
+        <p for="tipoVivienda">
+          <label for="tipoVivienda">Tipo de vivienda:</label>
+          <select name="tipoVivienda">
+            <option value="Piso">Piso</option>
+            <option value="Adosado">Adosado</option>
+            <option value="Chalet">Chalet</option>
+            <option value="Casa">Casa</option>
+          </select>
+        </p>
+        <p>
+          <label for="zona">Zona:</label>
+          <select name="zona">
+            <option value="Aljarafe">Aljarafe</option>
+            <option value="Centro">Centro</option>
+            <option value="Nervión">Nervión</option>
+            <option value="Macarena">Macarena</option>
+            <option value="Triana">Triana</option>
+          </select>
+        </p>
+        <p>
+          <label for="direccion">Dirección:</label>
+          <input type="text" name="direccion" id="direccion" placeholder="Escriba una dirección" maxlength="200" size="70">
+        </p>
+        <p>
+          <label for="dormitorios">Número de dormitorios:</label>
+          <input type="radio" name="dormitorios" id="1" value="1">1
+          <input type="radio" name="dormitorios" id="2" value="2">2
+          <input type="radio" name="dormitorios" id="3" value="3">3
+          <input type="radio" name="dormitorios" id="4" value="4">4
+          <input type="radio" name="dormitorios" id="5" value="5">5
+        </p>
+        <p>
+          <label for="precio">Precio:</label>
+          <input type="number" id="precio" name="precio" step="any" min="0" maxlength="8" size="10"> €
+        </p>
+        <p>
+          <label for="tamano">Tamaño:</label>
+          <input type="number" id="tamano" name="tamano" step="any" min="0" maxlength="3" size="10"> metros cuadrados
+        </p>
+        <p>
+          <p>Extras (marque los que procedan): </p>
+          <label for="piscina">Piscina</label>
+          <input type="checkbox" id="piscina" name="piscina" value="Piscina"><br>
+          <label for="jardin">Jardín</label>
+          <input type="checkbox" id="jardin" name="jardin" value="Jardín "><br>
+          <label for="garaje">Garaje</label>
+          <input type="checkbox" id="garaje" name="garaje" value="Garaje">
+        </p>
+        <p>
+          <input type="file" name="imagen" />
+          <input type="submit" name="subirImagen" value="Enviar imagen" />
+        </p>
+        <p>
+          <label for="observaciones">Observaciones: </label><br>
+          <textarea id="comentario" name="comentario" rows="6" cols="50" maxlength="500"></textarea><br>
+        </p>
+      </fieldset>
+      <br />
+      <input type="submit" value="Insertar Vivienda" />
+    </form>
+  </body>
+</html>
